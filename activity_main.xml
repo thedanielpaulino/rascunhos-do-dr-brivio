@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtPesquisaLivro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesquisar livro"
+        android:layout_alignParentTop="true" />
+
+    <RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtPesquisaLivro"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnAdicionarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Adicionar Livro"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnPesquisarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdicionarLivro"
+        android:text="Pesquisar"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
