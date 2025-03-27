@@ -7,14 +7,15 @@
     android:orientation="vertical"
     tools:context=".LoginActivity"
     android:gravity="center">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -44,28 +45,30 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/purple_500"
             android:padding="12dp"
             android:text="Entrar"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-
-            />
-
-
-
+            android:textSize="18sp" />
 
     </LinearLayout>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Não possui conta? Cadastre-se">
 
-</TextView>
+    <!-- Novo LinearLayout separado para "Cadastre-se" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+    android:layout_marginBottom="1dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não possui conta? Cadastre-se já!" />
+
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="300dp"
-        android:gravity="center"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/darker_gray"
         android:padding="12dp"
@@ -74,3 +77,5 @@
         android:textSize="18sp" />
 
 </LinearLayout>
+
+    </LinearLayout>
